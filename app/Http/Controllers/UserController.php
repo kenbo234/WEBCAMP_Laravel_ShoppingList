@@ -31,6 +31,11 @@ class UserController extends Controller
         //パスワードのHash化
         $datum['password'] = Hash::make($datum['password']);
         
+        //再入力パスワード一致確認
+       
+
+
+        
         // テーブルへのINSERT
         $r = UserModel::create($datum);
         //var_dump($r); exit;

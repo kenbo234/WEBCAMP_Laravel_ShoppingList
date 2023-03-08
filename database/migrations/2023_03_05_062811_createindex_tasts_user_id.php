@@ -16,7 +16,6 @@ class CreateindexTastsUserId extends Migration
         //
         Schema::table('shopping_lists', function (Blueprint $table) {
             $table->index('user_id');
-            
         });
     }
 
