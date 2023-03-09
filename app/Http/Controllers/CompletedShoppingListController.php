@@ -14,7 +14,7 @@ class CompletedShoppingListController extends Controller
 {
     public function list()
     {
-         $per_page = 20;
+         $per_page = 3;
         
         $list =CompletedShoppingListModel::orderBy('name')->paginate($per_page);
         

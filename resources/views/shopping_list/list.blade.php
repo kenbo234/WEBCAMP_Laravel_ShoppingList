@@ -43,7 +43,7 @@
             <th>「買うもの」名
 @foreach ($list as $shopping_list)
         <tr>
-            <td>{{ $shopping_list->created_at }}
+            <td>{{ date_format ($shopping_list->created_at,'Y/m/d') }}
             <td>{{ $shopping_list->name }}
             <!--完了ボタン-->
             <td>
