@@ -16,7 +16,7 @@ class CompletedShoppingListController extends Controller
     {
          $per_page = 3;
         
-        $list =CompletedShoppingListModel::orderBy('name')->paginate($per_page);
+        $list =CompletedShoppingListModel::orderBy('created_at')->paginate($per_page);
         
         
     
