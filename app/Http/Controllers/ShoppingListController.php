@@ -21,7 +21,7 @@ class ShoppingListController extends Controller
     protected function getListBuilder()
     {
       return ShoppingListModel::where('user_id', Auth::id())
-                     ->orderBy('name', 'DESC');
+                     ->orderBy('name', 'ASC');
 
 
     }
